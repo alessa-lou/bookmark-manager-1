@@ -1,8 +1,13 @@
-feature 'view bookmarks as list' do
-  scenario 'display a list of bookmarks' do
-    visit('/bookmarks')
-    expect(page).to have_content("Here are your bookmarks")
-    expect(page).to have_content("Makers Github")
+feature 'Viewing bookmarks' do
+  scenario 'visiting the homepage page' do
+    visit('/')
+    expect(page).to have_content("Bookmark Manager")
+  end
+
+  scenario 'bookmarks are visible to user' do
+    visit '/bookmarks'
+    expect(page).to have_content("http://www.makersacademy.com")
     expect(page).to have_content("https://github.com/makersacademy")
+    expect(page).to have_content("http://www.google.com")
   end
 end

@@ -5,8 +5,11 @@
 
 ```
 As a user
-So that I can see what's available
-I'd like to be able to see a list of bookmarks
+So that I can quickly go to websites I visit regularly
+I would like to to see a list of bookmarks
 
 ```
+
+**Domain Model**
+---
 ![User story 1](bookmark-manager/screenshots/Domain_Model.png)

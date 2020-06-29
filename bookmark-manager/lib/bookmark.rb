@@ -1,7 +1,10 @@
 class Bookmark
 
-  def all
-    ["B1", "B2", "B3"]
+  def self.all
+    [
+      "http://www.makersacademy.com",
+      "https://github.com/makersacademy",
+      "http://www.google.com"
+    ]
   end
-
 end
