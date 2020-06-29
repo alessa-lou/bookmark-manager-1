@@ -12,7 +12,7 @@ I would like to to see a list of bookmarks
 
 **Domain Model**
 ---
-![Domain Model](bookmark-manager/screenshots/Domain_Model.png)
+![Domain Model](https://github.com/Dhara-95/bookmark-manager/blob/master/bookmark-manager/screenshots/Domain_Model.png)
 
 **How to use the app**
 ---
