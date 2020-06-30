@@ -5,9 +5,9 @@ feature 'Viewing bookmarks' do
   end
 
   scenario 'bookmarks are visible to user' do
-    visit '/bookmarks'
+    visit('/bookmarks')
     expect(page).to have_content("http://www.makersacademy.com")
-    expect(page).to have_content("https://github.com/makersacademy")
+    expect(page).to have_content("http://www.destroyallsoftware.com")
     expect(page).to have_content("http://www.google.com")
   end
 end
