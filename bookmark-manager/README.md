@@ -8,6 +8,10 @@ As a user
 So that I can quickly go to websites I visit regularly
 I would like to to see a list of bookmarks
 
+As a user
+So I can store bookmark data for later retrieval
+I want to add a bookmark to Bookmark Manager
+
 ```
 
 **Domain Model**
