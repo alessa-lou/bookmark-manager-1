@@ -3,21 +3,23 @@ require 'pg'
 class Bookmark
 
   def self.all
-    
-    connection = connect_to_db
-    result = connection.exec('SELECT * FROM bookmarks')
+     
+    result = connect_to_db.exec('SELECT * FROM bookmarks')
     result.map { |bookmark| {:url => bookmark['url'], :title => bookmark['title']} }
 
   end
 
   def self.add(url, title)
 
-    connection = connect_to_db
-    result = connection.exec("INSERT INTO bookmarks (url, title) VALUES ('#{url}', '#{title}');")
+    connect_to_db.exec("INSERT INTO bookmarks (url, title) VALUES ('#{url}', '#{title}');")
 
   end
 
 end
+
+#
+# DATABASE CONNECT CODE BELOW (OUTSIDE CLASS)
+#
 
 def connect_to_db
 
